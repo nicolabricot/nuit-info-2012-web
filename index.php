@@ -16,7 +16,7 @@
     <meta name="description" lang="fr" content="IARISS Team, l'équipe IARISS de la nuit de l'info 2012 qui va promouvoir le patrimoine français !" />
     <meta name="keywords" content="IARISS, IARISS Team, Nuit de l'info 2012, #nuitinfo, Alsace, Mulhouse, Programmation, Promotion du patrimoine français, patrimoine français"/>
     <meta name="author" content="IARISS Team" />
-	<meta name="copyright" content="IARISS Team" />
+    <meta name="copyright" content="IARISS Team" />
     <meta name="ROBOTS" content="index, follow, archive" />
     
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -134,18 +134,18 @@
     
   <div id="container">
   
-  <h1><a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">IARISS Team</a></h1>
-  <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
-  
-  <h3>Préparez-vous, nous arrivons \o/</h3>
-  
-  <nav>
-    <ul>
-      <li class="twitter"><a href="//twitter.com/IarissTeam">@IarissTeam</a></li>
-      <li class="github"><a href="//github.com/IARISS/">GitHub</a></li>
-      <li class="iariss"><a href="http://iariss.fr">IARISS</a></li>
-    </ul>
-  </nav>
+    <h1><a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">IARISS Team</a></h1>
+    <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
+    
+    <h3>Préparez-vous, nous arrivons \o/</h3>
+    
+    <nav>
+      <ul>
+        <li class="twitter"><a href="//twitter.com/IarissTeam">@IarissTeam</a></li>
+        <li class="github"><a href="//github.com/IARISS/">GitHub</a></li>
+        <li class="iariss"><a href="http://iariss.fr">IARISS</a></li>
+      </ul>
+    </nav>
   
   </div><!-- #container -->
   
