@@ -76,7 +76,7 @@
         font-weight: normal;
         text-align: center;
         color: #ffffff;
-        background: url('/img/iariss.png') center top no-repeat;
+        background: url('./img/iariss.png') center top no-repeat;
       }
       h1 a:focus,
       h1 a:hover,
