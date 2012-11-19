@@ -58,7 +58,7 @@
         text-align: center;
       }
 
-      #countdown { position: absolute; z-index: 9999; bottom: 0; left: 35%; right: 35%; }
+      #countdown { position: absolute; z-index: 9999; bottom: 0; left: 0; right: 0; text-align: center; }
       
       h1, h2, h3 {
         font-weight: normal;
