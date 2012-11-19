@@ -58,6 +58,8 @@
         text-align: center;
       }
 
+      #container hgroup { text-shadow: 0 0 8px black; }
+
       #countdown { position: absolute; z-index: 9999; bottom: 0; left: 0; right: 0; text-align: center; }
       
       h1, h2, h3 {
@@ -137,10 +139,11 @@
     
   <div id="container">
   
-    <h1><a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">IARISS Team</a></h1>
-    <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
-    
-    <h3>Préparez-vous, nous arrivons \o/</h3>
+    <hgroup>
+      <h1><a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">IARISS Team</a></h1>
+      <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
+      <h3>Préparez-vous, nous arrivons \o/</h3>
+    </hgroup>
     
     <nav>
       <ul>
