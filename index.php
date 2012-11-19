@@ -19,12 +19,13 @@
     <meta name="copyright" content="IARISS Team" />
     <meta name="ROBOTS" content="index, follow, archive" />
     
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png" />
     
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     
-    <link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Imprima" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.countup.css" />
     <style>
       /* light reset */
       html, body { margin: 0; padding: 0; border: 0; font-size: 100%; height: 100%; vertical-align: baseline; }
@@ -56,6 +57,8 @@
         padding: 10px;
         text-align: center;
       }
+
+      #countdown { position: absolute; z-index: 9999; bottom: 0; left: 35%; right: 35%; }
       
       h1, h2, h3 {
         font-weight: normal;
@@ -148,9 +151,13 @@
     </nav>
   
   </div><!-- #container -->
+
+  <div id="countdown"></div>
   
   <!-- Oui, on sait, c'est une machine à gaz que nous chargons pour une fonctionnalité non importante, mais hein on avait envie que ce soit bien centré -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/jquery.countup.js"></script>
+  <script src="js/scripts.js"></script>
   <script>
     $(function() {
       jQuery.fn.center = function () {
@@ -161,6 +168,7 @@
       }
       $("#container").css('margin-top', 0).center();
     });
+
   </script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
