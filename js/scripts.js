@@ -1,7 +1,18 @@
+$(function() {
+  jQuery.fn.center = function () {
+    this.css("position","absolute");
+    this.css("top", Math.max(0, (($(window).height() - this.outerHeight()) / 2) +  $(window).scrollTop()) + "px");
+    this.css("left", Math.max(0, (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+    return this;
+  }
+  $("#container").css('margin-top', 0).center();
+});
+
 $(function(){
   // Création de l'objet 'date' (année / mois / jour) ici initialisé au : 9 mars 2012
   // Attention les mois commencent à 0 !
-  var ts = new Date(2012, 11, 07);
+  var ts = new Date(2012, 11, 06, 16, 33, 00);
+
   var newYear = true;
   
   if((new Date()) > ts){
@@ -16,5 +27,4 @@ $(function(){
     callback  : function(days, hours, minutes, seconds){
     }
   });
-  
 });

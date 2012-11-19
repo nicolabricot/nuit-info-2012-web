@@ -158,18 +158,6 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script src="js/jquery.countup.js"></script>
   <script src="js/scripts.js"></script>
-  <script>
-    $(function() {
-      jQuery.fn.center = function () {
-        this.css("position","absolute");
-        this.css("top", Math.max(0, (($(window).height() - this.outerHeight()) / 2) +  $(window).scrollTop()) + "px");
-        this.css("left", Math.max(0, (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft()) + "px");
-        return this;
-      }
-      $("#container").css('margin-top', 0).center();
-    });
-
-  </script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-36456913-1']);
