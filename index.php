@@ -114,17 +114,17 @@
       li.twitter a {
         color: #40AFDE;
         padding-left: 28px;
-        background: url('/img/twitter.png') left center no-repeat;
+        background: url('./img/twitter.png') left center no-repeat;
       }
       li.github a {
         color: #333;
         padding-left: 28px;
-        background: url('/img/github.png') left center no-repeat;
+        background: url('./img/github.png') left center no-repeat;
       }
       li.iariss a {
         color: #0C2A79;
         padding-left: 28px;
-        background: url('/img/iariss_globe.png') left center no-repeat;
+        background: url('./img/iariss_globe.png') left center no-repeat;
       }
 
     </style>
