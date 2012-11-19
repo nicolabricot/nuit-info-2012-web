@@ -48,9 +48,6 @@
       a:focus, a:hover, a:active {
         border-bottom: 1px solid #3FC85D;
       }
-      a:focus {
-        background-color: #ffffcc;
-      }
       
       #container {
         width: 600px;
@@ -70,6 +67,7 @@
         margin: 0 auto;
         height: 150px;
         width: 368px;
+        overflow: hidden;
         text-indent: -9000px;
         font-weight: normal;
         text-align: center;
