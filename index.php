@@ -60,7 +60,7 @@
 
       #container hgroup { text-shadow: 0 0 8px black; }
 
-      #countdown { position: absolute; z-index: 9999; bottom: 0; left: 0; right: 0; text-align: center; }
+
       
       h1, h2, h3 {
         font-weight: normal;
@@ -141,7 +141,10 @@
   
     <hgroup>
       <h1><a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">IARISS Team</a></h1>
-      <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
+
+      <div id=""></div>
+
+      <h2><span id="countdown">J&minus;<?php echo $delay; ?></span> ... avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
       <h3>Préparez-vous, nous arrivons \o/</h3>
     </hgroup>
     
@@ -154,8 +157,6 @@
     </nav>
   
   </div><!-- #container -->
-
-  <div id="countdown"></div>
   
   <!-- Oui, on sait, c'est une machine à gaz que nous chargons pour une fonctionnalité non importante, mais hein on avait envie que ce soit bien centré -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>

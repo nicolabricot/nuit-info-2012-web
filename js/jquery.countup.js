@@ -24,6 +24,7 @@
     var left, d, h, m, s, positions;
 
     // Initialize the plugin
+    $(this).html('').css('display', 'block');
     init(this, options);
     
     positions = this.find('.position');
