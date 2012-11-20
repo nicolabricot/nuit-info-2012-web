@@ -58,7 +58,7 @@
         text-align: center;
       }
 
-      #countdown { position: absolute; z-index: 9999; bottom: 0; left: 0; right: 0; text-align: center; }
+      /*#countdown { position: absolute; z-index: 9999; bottom: 0; left: 0; right: 0; text-align: center; }*/
       
       h1, h2, h3 {
         font-weight: normal;
@@ -162,8 +162,19 @@
   
   <!-- Oui, on sait, c'est une machine à gaz que nous chargons pour une fonctionnalité non importante, mais hein on avait envie que ce soit bien centré -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="js/jquery.countup.js"></script>
-  <script src="js/scripts.js"></script>
+  <!--<script src="js/jquery.countup.js"></script>
+  <script src="js/scripts.js"></script>-->
+  <script>
+    $(function() {
+    jQuery.fn.center = function () {
+      this.css("position","absolute");
+      this.css("top", Math.max(0, (($(window).height() - this.outerHeight()) / 2) +  $(window).scrollTop()) + "px");
+      this.css("left", Math.max(0, (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+      return this;
+    }
+    $("#container").css('margin-top', 0).center();
+    });
+  </script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-36456913-1']);
