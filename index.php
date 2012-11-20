@@ -25,7 +25,7 @@
     <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Imprima" type="text/css" />
-    <link rel="stylesheet" href="css/jquery.countup.css" />
+    <!--<link rel="stylesheet" href="css/jquery.countup.css" />-->
     <style>
       /* light reset */
       html, body { margin: 0; padding: 0; border: 0; font-size: 100%; height: 100%; vertical-align: baseline; }
@@ -58,12 +58,11 @@
         text-align: center;
       }
 
-      #container hgroup { text-shadow: 0 0 8px black; }
-
       #countdown { position: absolute; z-index: 9999; bottom: 0; left: 0; right: 0; text-align: center; }
       
       h1, h2, h3 {
         font-weight: normal;
+        text-shadow: 0 0 8px black;
       }
       h1 {
         margin: 0;
@@ -139,11 +138,9 @@
     
   <div id="container">
   
-    <hgroup>
-      <h1><a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">IARISS Team</a></h1>
-      <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
-      <h3>Préparez-vous, nous arrivons \o/</h3>
-    </hgroup>
+    <h1><a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">IARISS Team</a></h1>
+    <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
+    <h3>Préparez-vous, nous arrivons \o/</h3>
     
     <nav>
       <ul>
@@ -155,7 +152,7 @@
   
   </div><!-- #container -->
 
-  <div id="countdown"></div>
+  <!--<div id="countdown"></div>-->
   
   <!-- Oui, on sait, c'est une machine à gaz que nous chargons pour une fonctionnalité non importante, mais hein on avait envie que ce soit bien centré -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
