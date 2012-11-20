@@ -130,6 +130,11 @@
         padding-left: 28px;
         background: url('./img/iariss_globe.png') left center no-repeat;
       }
+      li.fb a {
+        color: #0C2A79;
+        padding-left: 28px;
+        background: url('./img/facebook.png') left center no-repeat;
+      }
 
     </style>
   </head>
@@ -146,7 +151,8 @@
       <ul>
         <li class="twitter"><a href="//twitter.com/IarissTeam">@IarissTeam</a></li>
         <li class="github"><a href="//github.com/IARISS/">GitHub</a></li>
-        <li class="iariss"><a href="http://iariss.fr">IARISS</a></li>
+        <li class="fb"><a href="http://fb.me/IarissTeam">IarissTeam</a></li>
+        <!--<li class="iariss"><a href="http://iariss.fr">IARISS</a></li>-->
       </ul>
     </nav>
   
