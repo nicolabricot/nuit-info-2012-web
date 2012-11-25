@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Olivares Georges" />
+    <meta name="description" content="" />
+    
+    <title>IARISS Team - Nuit De l'Info </title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <!-- Force latest IE rendering engine & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!--<link rel="stylesheet" href="css/jquery.parallax.css" />-->
+    <style>
+      body {
+        min-height: 4000px;
+        font-family: Imprima, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      div#parallax-background {
+        position: fixed; top: 0; bottom: 0; left: 0; right: 0;
+        background-image: url('img/night_sky_background.jpg');
+        background-position: center top;
+        background-size: 100%;
+        background-repeat: repeat-y;
+        height: 1000px;
+      }
+
+      div#parallax-moon {
+        background: url('img/moon_background.png') center center no-repeat;
+        background-size: 100%;
+        height: 95%; width: 20%;
+        margin: 0; padding: 0;
+        position: absolute; left: 10%; top: 0; z-index: 600;
+      }
+
+      div#parallax-title {
+        background: url('img/ndi.png') center center no-repeat;
+        height: 95%; width: 100%;
+        background-size: 20%;
+        margin: 0; padding: 0;
+        position: absolute; left: 0; top: 0; z-index: 400;
+      }
+
+      div#parallax-2012 {
+        background: url('img/2012-max.png') left bottom no-repeat;
+        background-size: auto 100%;
+        height: 480px;
+        width: 50%;
+        margin: 0; padding: 0;
+        position: absolute; left: 40%; top: 3450px; z-index: 250;
+      }
+
+      div#parallax-earth {
+        background: url('img/earth2.png') left bottom no-repeat;
+        background-size: 80%;
+        height: 4050px; width: 80%;
+        margin: 0; padding: 0;
+        position: absolute; left: 0; top: 0; bottom: 0; z-index: 200;
+      }
+
+      div#parallax-iariss {
+        background: url('img/iarissteam.png') center center no-repeat;
+        height: 20%; width: 300px;
+        background-size: auto 100%;
+        margin: 0; padding: 0;
+        position: absolute; top: 60%; right: 100px; z-index: 200;
+      }
+
+      div#parallax-stars {
+        background: url('img/shooting_stars_background.png') center center no-repeat;
+        position: fixed; top: 0; left: 0; bottom: 0; right: 0; z-index: 10;
+        opacity: .1;
+      }
+
+      div#parallax-followus {
+        background: url('img/twitter.png') center center no-repeat;
+        position: absolute; top: 3870px; right: 50px;
+        height: 128px; width: 128px;
+        z-index: 500;
+      }
+
+      ul#parallax-links {
+        margin: 0; padding: 0;
+        position: fixed; bottom: 10px; right: 10px;
+        z-index: 500;
+      }
+      ul#parallax-links li {
+        margin: 5px; padding: 0; list-style-type: none; display: inline-block;
+      }
+      ul#parallax-links a {
+        padding: 5px;
+        display: block;
+        font-size: 1.25em;
+        text-decoration: none;
+        padding-left: 30px;
+      }
+
+      #parallax-facebook { 
+        color: rgb(12, 42, 121);
+        padding-left: 28px;
+        background: url("../img/facebook.png") no-repeat scroll left center transparent;
+        text-shadow: 0 0 10px white;
+      }
+      #parallax-twitter {
+        color: rgb(64, 175, 222);
+        padding-left: 28px;
+        background: url("../img/twitter.png") no-repeat scroll left center transparent;
+        text-shadow: 0 0 10px black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="parallax">
+      <div id="parallax-background"></div>
+      <div id="parallax-moon"></div>
+      <div id="parallax-title"></div>
+      <div id="parallax-2012"></div>
+      <div id="parallax-iariss"></div>
+      <div id="parallax-earth"></div>
+      <div id="parallax-stars"></div>
+
+      <div id="parallax-followus"></div>
+      <ul id="parallax-links">
+        <li><a id="parallax-twitter" href="http://twitter.com/IarissTeam">@IarissTeam</a></li>
+        <li><a id="parallax-facebook" href="http://fb.me/IarissTeam">IarissTeam</a></li>
+      </ul>
+    </div>
+
+    <!-- javascripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="js/jquery.scrolling-parallax.js"></script>
+    <script src="js/jquery.slideto.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script>
+      
+      $(function() {
+
+        $('div#parallax-moon')
+          .css({
+            'background-size': '0%',
+            'marginLeft': '30%',
+            'width': '20%',
+          })
+          .animate({
+            'background-size': '100%',
+            'marginLeft': '0',
+          }, {duration: 4000});
+
+        $('div#parallax-title')
+          .css({
+            'background-size': '0%',
+          })
+          .animate({
+            'background-size': '20%',
+          }, {duration: 4000});
+
+
+        $('div#parallax-stars')
+            .animate({
+              'top': '1500px',
+              'left': '1500px',
+            }, {duration: 4000});
+        setInterval(function() {
+          $('div#parallax-stars')
+            .css({
+              'top': '-1500px',
+              'left': '-1500px',
+            })
+            .animate({
+              'top': '1500px',
+              'left': '1500px',
+            }, {duration: 4000});
+        }, 15000);
+
+        
+        // Logo IARISS
+        $('div#parallax-iariss')
+          .css({
+            'opacity': 0,
+          })
+        setTimeout(function() {
+          $('div#parallax-iariss').animate({
+            'opacity': 1
+          }, {duration: 1000});
+        }, 3000);
+
+        setTimeout(function() {
+          var documentBody = (($.browser.chrome)||($.browser.safari)) ? document.body : document.documentElement;
+          $(documentBody).animate({scrollTop: $('body').height()}, 6000, 'easeOutQuad');
+        }, 3000);
+
+
+        // OBJET Lune - scrollingParallax
+        $('div#parallax-moon').scrollingParallax({
+          staticSpeed : .06,
+          staticScrollLimit : false,
+        });
+
+        // OBJET Titre - scrollingParallax
+        $('div#parallax-title').scrollingParallax({
+          staticSpeed : .06,
+          staticScrollLimit : false,
+        });
+
+        // OBJET Logo Iariss - scrollingParallax
+        $('div#parallax-iariss').scrollingParallax({
+          staticSpeed : .1,
+          staticScrollLimit : false,
+        });
+      });
+    </script>
+  </body>
+</html>
