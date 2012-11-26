@@ -44,7 +44,7 @@ a:focus, a:hover, a:active {
 }
 
 #container {
-  width: 600px;
+  width: 650px;
   margin: 50px auto;
   padding: 10px;
   text-align: center;
@@ -105,25 +105,44 @@ nav a:focus,
 nav a:hover,
 nav a:active {
   color: #fff;
-  border: none;
 }
 li.twitter a {
   color: #40AFDE;
   padding-left: 28px;
   background: url('/img/twitter.png') left center no-repeat;
 }
+li.twitter a:hover {
+  border-bottom: 1px solid #40AFDE;
+}
 li.github a {
   color: #333;
   padding-left: 28px;
   background: url('/img/github.png') left center no-repeat;
+}
+li.github a:hover {
+  border-bottom: 1px solid #333;
 }
 li.iariss a {
   color: #0C2A79;
   padding-left: 28px;
   background: url('/img/iariss_globe.png') left center no-repeat;
 }
+li.iariss a:hover {
+  border-bottom: 1px solid #0C2A79;
+}
 li.fb a {
   color: #0C2A79;
   padding-left: 28px;
   background: url('/img/facebook.png') left center no-repeat;
+}
+li.fb a:hover {
+  border-bottom: 1px solid #0C2A79;
+}
+li.tumblr a {
+  color: #000;
+  padding-left: 28px;
+  background: url('http://res.iarissteam.me/tumblr/favicon.ico') left center no-repeat;
+}
+li.tumblr a:hover {
+  border-bottom: 1px solid #000;
 }
