@@ -1,11 +1,10 @@
 <?php
-  $nuit_info = 1354807980;
-  $delay = floor(($nuit_info - time()) / (60*60*24));
+  $delay = floor((1354807980 - time()) / (60*60*24));
 ?><!DOCTYPE html>
 <html lang="fr-fr">
   <head>
     <meta charset="utf-8" />
-    <title>J&minus;<?php echo $delay; ?> &bull; IARISS Team</title>
+    <title><?php echo $delay>0 ? 'J&minus;' . $delay . ' avant' : 'Jour J pour'; ?> la #nuitinfo 2012 &bull; IARISS Team</title>
     
     <!--
     
@@ -43,8 +42,8 @@
   <div id="container">
   
     <h1><a href="http://iarissteam.me">IARISS Team</a></h1>
-    <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">#nuitinfo</a> 2012 !</h2>
-    <h3>Préparez-vous, nous arrivons \o/</h3>
+    <h2><span><?php echo $delay>0 ? 'J&minus;' . $delay . ' avant' : 'Jour J pour'; ?></span> la <a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">#nuitinfo</a> 2012 !</h2>
+    <h3><?php echo $delay>0 ? 'Ça se rapproche très vite' : 'C’est parti pour l’aventure'; ?> \o/</h3>
     
     <nav>
       <ul>
