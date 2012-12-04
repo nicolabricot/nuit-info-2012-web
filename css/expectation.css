@@ -44,7 +44,7 @@ a:focus, a:hover, a:active {
 }
 
 #container {
-  width: 650px;
+  width: 600px;
   margin: 50px auto;
   padding: 10px;
   text-align: center;
@@ -95,7 +95,7 @@ nav ul {
 }
 nav li {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 15px 15px 15px;
 }
 nav a {
   padding: 2px;
@@ -106,6 +106,16 @@ nav a:hover,
 nav a:active {
   color: #fff;
 }
+
+
+li.twitter, li.tumblr {
+  float: left;
+}
+li.fb, li.live {
+  float: right;
+  text-align: right;
+}
+  
 li.twitter a {
   color: #40AFDE;
   padding-left: 28px;
@@ -145,4 +155,12 @@ li.tumblr a {
 }
 li.tumblr a:hover {
   border-bottom: 1px solid #000;
+}
+li.live a {
+  color: #fff;
+  padding-left: 28px;
+  background: url('/img/live.png') left center no-repeat;
+}
+li.live a:hover {
+  border-bottom: 1px solid #fff;
 }
