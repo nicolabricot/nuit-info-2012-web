@@ -1,5 +1,5 @@
 <?php
-  $delay = floor((1354807980 - time()) / (60*60*24));
+  $delay = round((1354807980 - time()) / (60*60*24));
 ?><!DOCTYPE html>
 <html lang="fr-fr">
   <head>
