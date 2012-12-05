@@ -1,5 +1,6 @@
 <?php
-  $delay = round((1354807980 - time()) / (60*60*24));
+  date_default_timezone_set('Europe/Paris');
+  $delay = ceil((mktime(16, 33, 0, 12, 6, 2012) - time()) / (60*60*24));
 ?><!DOCTYPE html>
 <html lang="fr-fr">
   <head>
