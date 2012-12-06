@@ -1,10 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <meta charset="utf-8" />
+    <title>#nuitinfo 2012 &bull; IARISS Team</title>
+    
+    <!--
+    
+    $$$$$$\                    $$\                           $$$$$$$$\                                
+    \_$$  _|                   \__|                          \__$$  __|                               
+      $$ |  $$$$$$\   $$$$$$\  $$\  $$$$$$$\  $$$$$$$\          $$ | $$$$$$\   $$$$$$\  $$$$$$\$$$$\  
+      $$ |  \____$$\ $$  __$$\ $$ |$$  _____|$$  _____|         $$ |$$  __$$\  \____$$\ $$  _$$  _$$\ 
+      $$ |  $$$$$$$ |$$ |  \__|$$ |\$$$$$$\  \$$$$$$\           $$ |$$$$$$$$ | $$$$$$$ |$$ / $$ / $$ |
+      $$ | $$  __$$ |$$ |      $$ | \____$$\  \____$$\          $$ |$$   ____|$$  __$$ |$$ | $$ | $$ |
+    $$$$$$\\$$$$$$$ |$$ |      $$ |$$$$$$$  |$$$$$$$  |         $$ |\$$$$$$$\ \$$$$$$$ |$$ | $$ | $$ |
+    \______|\_______|\__|      \__|\_______/ \_______/          \__| \_______| \_______|\__| \__| \__|
+    
+    -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" lang="fr" content="IARISS Team, l'équipe IARISS de la nuit de l'info 2012 qui va promouvoir le patrimoine français ! Nous allons bien nous amuser, alors venez nous supporter :) Surprises en vue \o/" />
+    <meta name="keywords" content="IARISS, IARISS Team, Nuit de l'info 2012, #nuitinfo, Alsace, Mulhouse, Programmation, Promotion du patrimoine français, patrimoine français"/>
+    <meta name="author" content="IARISS Team" />
+    <meta name="robots" content="index, follow, archive" />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Imprima" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/screen.css" />
     <style>
-      #logo    {
+      #logo a  {
+        text-indent: -90000px;
         position: absolute; top: 5%; left: 0; right: 0; z-index: 1000; text-align: center;
         background-image: url('./img/team_400x280.png');
         background-size: auto 100%;
@@ -46,15 +76,13 @@
           padding-left: 28px;
           background: url("http://iarissteam.me/img/live.png") no-repeat scroll left center transparent;
       }
-
-
     </style>
   </head>
   <body>
     <div id="wrapper"></div>
     <canvas id="canvas" width="600" height="300"></canvas>
     <div id="text"></div>
-    <div id="logo"></div>
+    <div id="logo"><a href="http://iarissteam.me">Iariss Team</a></div>
     <nav>
       <ul>
         <li class="twitter"><a href="//twitter.com/IarissTeam">@IarissTeam</a></li>
