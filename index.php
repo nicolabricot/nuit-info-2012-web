@@ -1,11 +1,11 @@
 <?php
-  $nuit_info = 1354807980;
-  $delay = floor(($nuit_info - time()) / (60*60*24));
+  date_default_timezone_set('Europe/Paris');
+  $delay = ceil((mktime(16, 33, 0, 12, 6, 2012) - time()) / (60*60*24));
 ?><!DOCTYPE html>
 <html lang="fr-fr">
   <head>
     <meta charset="utf-8" />
-    <title>J&minus;<?php echo $delay; ?> &bull; IARISS Team</title>
+    <title><?php echo $delay>0 ? 'J&minus;' . $delay . ' avant' : 'Jour J pour'; ?> la #nuitinfo 2012 &bull; IARISS Team</title>
     
     <!--
     
@@ -21,7 +21,7 @@
     -->
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" lang="fr" content="IARISS Team, l'équipe IARISS de la nuit de l'info 2012 qui va promouvoir le patrimoine français !" />
+    <meta name="description" lang="fr" content="IARISS Team, l'équipe IARISS de la nuit de l'info 2012 qui va promouvoir le patrimoine français ! Nous allons bien nous amuser, alors venez nous supporter :) Surprises en vue \o/" />
     <meta name="keywords" content="IARISS, IARISS Team, Nuit de l'info 2012, #nuitinfo, Alsace, Mulhouse, Programmation, Promotion du patrimoine français, patrimoine français"/>
     <meta name="author" content="IARISS Team" />
     <meta name="copyright" content="IARISS Team" />
@@ -42,16 +42,17 @@
     
   <div id="container">
   
-    <h1><a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">IARISS Team</a></h1>
-    <h2><span>J&minus;<?php echo $delay; ?></span> avant la <a href="//nuitdelinfo.com/nuitinfo2012/">#nuitinfo</a> 2012 !</h2>
-    <h3>Préparez-vous, nous arrivons \o/</h3>
+    <h1><a href="http://iarissteam.me">Iariss Team</a></h1>
+    <h2><span><?php echo $delay>0 ? 'J&minus;' . $delay . ' avant' : 'Jour J pour'; ?></span> la <a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">#nuitinfo</a> 2012 !</h2>
+    <h3><?php echo $delay>0 ? 'Ça se rapproche très vite' : 'C’est parti pour l’aventure'; ?> \o/</h3>
     
     <nav>
       <ul>
         <li class="twitter"><a href="//twitter.com/IarissTeam">@IarissTeam</a></li>
-        <li class="github"><a href="//github.com/IARISS/">GitHub</a></li>
         <li class="fb"><a href="http://fb.me/IarissTeam">IarissTeam</a></li>
-<?php /*<li class="iariss"><a href="http://iariss.fr">IARISS</a></li>*/ ?>
+        <li class="tumblr"><a href="//lesjoiesdelanuit.tumblr.com">Les joies de la nuit</a></li>
+        <li class="live"><a href="http://live.iarissteam.me">Live</a></li>
+<?php /*<li class="github"><a href="//github.com/IARISS/" rel="nofollow">GitHub</a></li>*/ ?>
       </ul>
     </nav>
   
