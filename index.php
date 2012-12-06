@@ -1,11 +1,11 @@
 <?php
   date_default_timezone_set('Europe/Paris');
-  $delay = ceil((mktime(16, 33, 0, 12, 6, 2012) - time()) / (60*60*24));
+  $delay = ceil((mktime(16, 33, 0, 12, 6, 2012) - time()) / (60*60));
 ?><!DOCTYPE html>
 <html lang="fr-fr">
   <head>
     <meta charset="utf-8" />
-    <title><?php echo $delay>0 ? 'J&minus;' . $delay . ' avant' : 'Jour J pour'; ?> la #nuitinfo 2012 &bull; IARISS Team</title>
+    <title><?php echo $delay>0 ? 'H&minus;' . $delay . ' avant' : 'H+' . $delay . ' pour'; ?> la #nuitinfo 2012 &bull; IARISS Team</title>
     
     <!--
     
@@ -43,7 +43,7 @@
   <div id="container">
   
     <h1><a href="http://iarissteam.me">Iariss Team</a></h1>
-    <h2><span><?php echo $delay>0 ? 'J&minus;' . $delay . ' avant' : 'Jour J pour'; ?></span> la <a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">#nuitinfo</a> 2012 !</h2>
+    <h2><span><?php echo $delay>0 ? 'H&minus;' . $delay . ' avant' : 'H+' . $delay . ' pour'; ?></span> la <a href="http://www.nuitdelinfo.com/nuitinfo2012/teams:iariss_team:start">#nuitinfo</a> 2012 !</h2>
     <h3><?php echo $delay>0 ? 'Ça se rapproche très vite' : 'C’est parti pour l’aventure'; ?> \o/</h3>
     
     <nav>
